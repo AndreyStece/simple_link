@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 15% auto 0  ;
+  max-width: 1320px;
+  align-items: center;
+  justify-content: center;
+}
+
+.container > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.section-name {
+  text-align: center;
+}
+
+.section-name > *:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.alert {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 230px;
+  height: 65px;
+  border-radius: 10px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 65px;
+}
+
+.alert.success {
+  background-color: #1cac78;
+}
+
+.alert.error {
+  background-color: #ee204d;
+}
+
+.section-form {
+  padding: 1% 0;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #ffcfab;
+}
+
+.section-form > *:last-child {
+  margin-top: 15px;
+}
+
+.input-group {
+  display: flex;
+  padding: 0 10px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  display: inline-block;
+  margin: 0;
+  padding: .6em .8em;
+  width: 100%;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn {
+  display: inline-block;
+  padding: .375rem .75rem;
+  border: 1px solid #bdbdbd;
+  border-radius: .25rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: #eee;
+  font-size: 1rem;
+  transition: background-color .15s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #bdbdbd;
+}
+
+.hidden {
+  display: none;
+}
+
+.not-found {
+  font-size: 36px;
+}
